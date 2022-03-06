@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include vanstation *.css
+recursive-include vanstation *.csv
+recursive-include vanstation *.html
+recursive-include vanstation *.ico
+recursive-include vanstation *.js
+recursive-include vanstation *.json
+recursive-include vanstation *.md
+recursive-include vanstation *.png
+recursive-include vanstation *.py
+recursive-include vanstation *.svg
+recursive-include vanstation *.txt
+recursive-exclude vanstation *.pyc
