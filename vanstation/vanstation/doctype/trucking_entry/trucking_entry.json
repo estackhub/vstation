@@ -1,0 +1,217 @@
+{
+ "actions": [],
+ "autoname": "field:trucking_name",
+ "creation": "2022-03-14 05:05:41.562476",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trucking_name",
+  "request_series",
+  "trucking_type",
+  "party",
+  "party_name",
+  "column_break_6",
+  "territory",
+  "van_name",
+  "call_status",
+  "company",
+  "posting_timestamp",
+  "warehouse_section",
+  "from_warehouse",
+  "center_column",
+  "to_warehouse",
+  "item_section_section",
+  "items",
+  "total_qty",
+  "trip_name",
+  "remarks",
+  "disabled",
+  "is_frozen",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "trucking_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Trucking Name",
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "request_series",
+   "fieldtype": "Select",
+   "label": "Request Series",
+   "options": "\nMS-HQ-.YYYY.-.####\nMS-GN-.YYYY.-.####\nMS-NB-.YYYY.-.####",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "trucking_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Trucking Type",
+   "options": "Truck Out\nTruck In",
+   "reqd": 1
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Party",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "party.full_name",
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "van_name",
+   "fieldtype": "Data",
+   "label": "Van Name"
+  },
+  {
+   "fieldname": "call_status",
+   "fieldtype": "Int",
+   "label": "Call Status"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posting_timestamp",
+   "fieldtype": "Datetime",
+   "label": "Posting Timestamp"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "trip_name",
+   "fieldtype": "Link",
+   "label": "Trip Name",
+   "options": "VTrip"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_frozen",
+   "fieldtype": "Check",
+   "label": "Is Frozen"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Trucking Entry Detail"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "warehouse_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouse"
+  },
+  {
+   "fieldname": "from_warehouse",
+   "fieldtype": "Link",
+   "label": "Default Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "to_warehouse",
+   "fieldtype": "Link",
+   "label": "Default Target Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "item_section_section",
+   "fieldtype": "Section Break",
+   "label": "Item Section"
+  },
+  {
+   "fieldname": "center_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Trucking Entry",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-03-28 02:56:19.972422",
+ "modified_by": "Administrator",
+ "module": "Vanstation",
+ "name": "Trucking Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Station Team",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "restrict_to_domain": "Distribution",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

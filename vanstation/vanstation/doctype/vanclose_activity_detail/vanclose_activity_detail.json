@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2022-03-27 04:50:51.074982",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "total_quantity_out",
+  "total_call_sold",
+  "total_quantity_in",
+  "expected_quantity",
+  "diff_quantity",
+  "make_sales",
+  "make_sales_qty",
+  "make_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "total_quantity_out",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Quantity Out"
+  },
+  {
+   "fieldname": "total_call_sold",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Call Sold"
+  },
+  {
+   "fieldname": "total_quantity_in",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Quantity In"
+  },
+  {
+   "fieldname": "expected_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Expected Quantity"
+  },
+  {
+   "fieldname": "diff_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Diff Quantity"
+  },
+  {
+   "default": "0",
+   "fieldname": "make_sales",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Make Sales"
+  },
+  {
+   "fieldname": "make_sales_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Make Sales Qty"
+  },
+  {
+   "fieldname": "make_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Make Rate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-27 04:59:42.255851",
+ "modified_by": "Administrator",
+ "module": "Vanstation",
+ "name": "Vanclose Activity Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

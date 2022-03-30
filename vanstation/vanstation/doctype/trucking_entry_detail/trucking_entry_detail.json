@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2022-03-16 23:40:41.690504",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "qty",
+  "s_warehouse",
+  "call_rate",
+  "ste_rate",
+  "t_warehouse",
+  "description_section",
+  "decscription",
+  "qty_break",
+  "transfer_qty",
+  "uom",
+  "stock_uom",
+  "conversion_factor",
+  "against_trucking_entry"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "s_warehouse",
+   "fieldtype": "Link",
+   "label": "Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "t_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "decscription",
+   "fieldtype": "Text Editor",
+   "label": "Decscription"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "transfer_qty",
+   "fieldtype": "Float",
+   "label": "Transfer Quantity"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "label": "Stock Uom",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "label": "Conversion Factor"
+  },
+  {
+   "fieldname": "against_trucking_entry",
+   "fieldtype": "Link",
+   "label": "Against Trucking Entry",
+   "options": "Trucking Entry"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "qty_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "call_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Call Rate",
+   "options": "currency"
+  },
+  {
+   "fieldname": "ste_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "STE Rate",
+   "options": "currency"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-27 03:47:18.642412",
+ "modified_by": "Administrator",
+ "module": "Vanstation",
+ "name": "Trucking Entry Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
